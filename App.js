@@ -3,21 +3,18 @@ import {
   StyleSheet,              //StyleSheet = apply css to the react native framework, Flexbox
   Text,                    //Text = component that renders text on app
   View,                    //View = container component/box, where all other components go in like text, image, etc.
-  TextInput,
-  TouchableNativeFeedback,
-  Button,
   TouchableOpacity
 } from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
+// import SplashScreen from 'react-native-splash-screen';
 export default class App extends Component {
 
-componentDidMount() {
-  SplashScreen.hide()
-}
+// componentDidMount() {
+//   SplashScreen.hide()
+// }
 
-componentDidUpdate() {
-  SplashScreen.hide()
-}
+// componentDidUpdate() {
+//   SplashScreen.hide()
+// }
 //JSX = to write html inside javascript, 
 //Props/properties = style
 constructor() {
@@ -168,14 +165,16 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   result: {
+    paddingHorizontal: 5,
     flex: 2,
-    backgroundColor: '#000',
+    backgroundColor: '#1C263C',
     justifyContent: 'center',
     alignItems: 'flex-end'
   },
   calculations: {
+    paddingHorizontal: 5,
     flex: 1,
-    backgroundColor: '#808080',
+    backgroundColor: '#B6C0D2',
     justifyContent: 'center',
     alignItems: 'flex-end'
   },
@@ -189,7 +188,7 @@ const styles = StyleSheet.create({
   },
   operations: {
     flex: 1,
-    backgroundColor: '#ffa500',
+    backgroundColor: '#9CFF00',
     justifyContent: 'space-around',
     alignItems: 'stretch'
   }
